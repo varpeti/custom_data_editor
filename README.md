@@ -23,7 +23,10 @@ npm run build     # production build in dist/
 - **Delete cell**: clear a cell's text and commit.
 - **Delete row**: Remove every cell from a row's summary.
 
-## Integration with Owlbear Rodeo
+## GM Editor
 
-- **Show**: `function show_page(data: AppData | undefined, edited_callback: (data: AppData) => void): void`
-- **Update**: `async function update_data_callback(data: AppData, item: Item): Promise<void>`
+- List of all players - draggable
+- List of Editors/Viewers - draggable, right-click to remove
+- Copy/Paste - Copy the json data to save it, paste to load it
+  - It is not synchronized with the main editor, reselect the item to update before copy
+  - It re-renders the whole editor after commit with `Ctrl/Cmd+Enter` or clicking away, but it can be buggy

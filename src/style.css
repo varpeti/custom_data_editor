@@ -32,10 +32,10 @@ body {
 
 #app {
   min-height: 100vh;
-  padding: 1rem 2rem 5rem;
+  padding: 1rem 0.2rem 5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.33rem;
+  gap: 1rem 0.2rem 5rem;
   margin: 0 auto;
 }
 
@@ -227,4 +227,23 @@ textarea.cell-edit-input {
 
 .fab-add-row:active {
   transform: translateX(-50%) scale(0.96);
+}
+
+.row-title {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 0.85rem;
+  min-width: 7rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--ink);
+  border-right: 1px solid var(--border);
+  background: var(--accent-soft);
+  white-space: nowrap;
+}
+
+.item-name {
+  margin: 0 auto;
+  padding-bottom: 1rem;
 }

@@ -1,6 +1,6 @@
 {
   "name": "Custom Data Editor",
-  "version": "1.0.1",
+  "version": "0.3.0",
   "manifest_version": 1,
   "action": {
     "title": "Custom Data Editor",

@@ -7,6 +7,7 @@ export interface CellHost {
 
 export function buildCellElement(cell: CellData, host: CellHost): HTMLElement {
   const el = document.createElement('div');
+  el.title = "Right-click to Edit; To Delete leave it empty"
   el.className = 'cell';
   el.dataset.cellId = cell.id;
   setCellText(el, cell.text);
